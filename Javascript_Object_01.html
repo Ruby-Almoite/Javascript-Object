@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object 01</title>
+</head>
+
+<h1> Car Model</h1>
+<p id ="demo"> </p>
+
+<script>
+    const Car =function (carname, yearModel, engineType,manufacturer,brand,countryOrigin){
+        this.cName = carname;
+        this.ymodel = yearModel;
+        this.eType =engineType;
+        this.manuF =manufacturer;
+        this.bName = brand;
+        this.cOrigin =countryOrigin;
+    
+    }
+    const myCar = new Car ("Ferrari", "Year Model 2021", "789-hp 6.5-liter V-12", "FIAT Chrysler Automobiles (FCA)", "Ferrari","Maranello, Italy",);
+
+    document.getElementById("demo").innerHTML =
+    "Car name: " + myCar.cName + "<br />" + "<br />" +
+    "Year Model: " +myCar.ymodel + "<br />" + "<br />" +
+    "Engine Type: " + myCar.eType + "<br />" + "<br />" +
+    "Manufacturer: " + myCar.manuF + "<br />" + "<br />" +
+    "Brand: " + myCar.bName +  "<br />" + "<br />" +
+    "Country of Origin: " + myCar.cOrigin 
+
+    document.body.style.backgroundColor = "Brown";
+    document.body.style.fontFamily = "Arial";
+    document.body.style.color = "White";
+    document.body.style.textAlign = "Left";
+    document.body.style.fontSize = "Larger";
+    document.body.style.padding = "40px";
+    document.body.style.margin = "auto";
+    
+</script>
+
+<body>
+
+</body>
+</html>

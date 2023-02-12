@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object 03 </title>
+
+    <style>
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(163, 100, 55);
+          margin:auto;
+          width: 400px;
+          height: 500px;
+          font-size: large;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          margin-top: 50px;
+          border-radius: 20px;
+          color:aliceblue
+        }
+      </style>
+
+</head>
+
+<body>
+
+        <div class ="container">
+            <h1>Student Information</h1>
+            <p id ="demo"> </p>
+                <script>
+                const student = function (firstName, lastName, address, age, email,){
+                    this.firstName = firstName;
+                    this.lastName =lastName;
+                    this.address =address;
+                    this.age =address;
+                    this.age = age;
+                    this.email =email;
+                }
+
+
+                student.prototype.nationality = "American";
+                student.prototype.language = "English";
+
+                const studentInfo = new student ("Mary", "Smith", "Burkhadt Rd. Evansville", 29, "mary123@yahoo.com")
+
+
+                document.getElementById("demo").innerHTML =
+                    "First name = " + studentInfo.firstName + "<br/>" +"<br/>" +
+                    "Last name = " + studentInfo.lastName + "<br/>" +"<br/>" +
+                    "Address = " + studentInfo.address + "<br/>" +"<br/>" +
+                    "Age= " + studentInfo.age + "<br/>" +"<br/>" +
+                    "Email = " + studentInfo.email + "<br/>" +"<br/>" +
+                    "Nationality = " +  student.prototype.nationality + "<br/>" +"<br/>" +
+                    "Language= " + student.prototype.language
+
+                </script>
+
+        </div>
+</body>
+</html>
